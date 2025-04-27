@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export function FirstApp( { title, message } ) {
     return (
         <>
@@ -5,4 +7,9 @@ export function FirstApp( { title, message } ) {
             <p>{ message }</p>
         </>
     )
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    message: PropTypes.string,
 }
